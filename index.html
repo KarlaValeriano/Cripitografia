@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+    <title>criptografia</title>
+</head>
+<body>
+    <main>
+        <h1>Cifra de Cesar e Base 64.</h1>
+
+       
+           <div>
+               
+            <select onchange="check()" id="codetipo"><br>
+                
+                <option>Selecione a linguagem</option>
+                <option value="base64">Base64</option>
+                <option value="cesar">Cifra de Cesar</option>
+           
+            </select>
+        </div>
+            <fieldset id="codificar">
+                <p>Digite um texto</p>
+                <textarea id="texto" type="text"> </textarea>
+                <input type="number" id="number"
+                ><br>  
+                <input type="submit" id="botao" onclick="code()">
+                <br>
+               
+               
+               
+            </fieldset>
+            <br>
+            <fieldset id="decodificar" >
+                <div id="app">
+                    <label for="ipt">Digite um texto</label>
+                    <input id="inpt" type="text" name="ipt" />
+              
+                    <button id="btn">Codificar</button>
+                    <button id="btn2">Decodificar</button>
+                  </div>
+                  <div id="text">
+                    <h2 id="subtitle"></h2>
+                  </div>
+              
+            </fieldset>
+ 
+    </main>
+    <footer id="rodape"><a>© Karla Valeriano - T13</a></footer>
+
+   
+</body>
+<script src="cifra.js"></script>
+</html>
